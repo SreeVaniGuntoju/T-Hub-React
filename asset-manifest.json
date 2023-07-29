@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/T-hub-React/static/css/main.43c34c60.css",
+    "main.js": "/T-hub-React/static/js/main.90e21b5e.js",
+    "static/media/Clip2.jpg": "/T-hub-React/static/media/Clip2.7d3bd36227472f96099c.jpg",
+    "static/media/Banner1.jpg": "/T-hub-React/static/media/Banner1.ad35ec17260dbe327052.jpg",
+    "index.html": "/T-hub-React/index.html",
+    "main.43c34c60.css.map": "/T-hub-React/static/css/main.43c34c60.css.map",
+    "main.90e21b5e.js.map": "/T-hub-React/static/js/main.90e21b5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43c34c60.css",
+    "static/js/main.90e21b5e.js"
+  ]
+}
