@@ -1,0 +1,133 @@
+/* ---------------------importing font family -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* -----------------------variable CSS-------------------------------- */
+
+
+  /* --------colors------- */
+  $fBlkClr:#b379ab;
+  $lBlkClr:#2e2c2c;
+  $blkClr:#1d1b1b;
+  $whtClr:#f0e6f0;
+  $boxShadow:#796f6f;
+
+  /* ---------font-family------------- */
+  $poppins:'poppins', sans-serif;
+  $nunito:'nunito', sans-serif;
+  $openSans:'Open Sans', sans-serif;
+  $roboto: 'Roboto', sans-serif; 
+
+  // ------ importing SCSS file-------
+  @import './components/navbar/Navbar.scss';
+  @import './components/hero/Hero.scss';
+  @import './components/work/Work.scss';
+  @import './components/specials/Specials.scss';
+  @import './components/contact/Contact.css';
+  @import './components/footer/Footer.scss';
+ 
+  *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color:#f7f7f7;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+.container{
+  max-width: 960px;
+  margin-inline: auto;
+  padding: 0 1rem;
+  
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bars{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  z-index: 43311;
+  padding: .5rem;
+  color: orangered;
+  display: none;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+}
+
+.phone-nav{
+  transition: all .5s;
+  transform: translateX(-100%);
+  display: none;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 3222;
+  background-color: $fBlkClr;
+  color: $whtClr;
+  >.container{
+    font-family: $openSans;
+    padding: 2rem;
+    height: 100vh;
+    flex-direction: column;
+    >h2{
+      font-family: $poppins;
+      color: orangered;
+    }
+    >.phone-itemBox{
+      flex-direction: column;
+      padding: 2rem;
+      >li{
+        padding: 1rem;
+        >a{
+          margin: auto;
+          color: $whtClr;
+          padding: .5rem;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+.phone-nav-come{
+  transform: translateX(0);
+}
+@media screen and (max-width:657px) {
+ 
+  .bars{
+    display: block;
+  }
+  .phone-nav{
+    display: block;  
+  }
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: $fBlkClr;
+}
+::-webkit-scrollbar-track{
+  background-color: $whtClr;
+}
+
+
